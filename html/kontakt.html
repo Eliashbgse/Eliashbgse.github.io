@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/css/kontakt.css">
+    <link rel="stylesheet" href="/css/topnav.css" />
+    <script type="text/javascript" src="/Js/index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My first web page</title>
+    <style>
+      .main {
+        margin-top: 85px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="topnav">
+      <p class="logo">Elias Jovancic Persson</p>
+      <div class="topnavelements">
+        <a href="/index.html">Hem</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a class="active"href="kontakt.html">Kontakt</a>
+      </div>
+      <div class="dropdown">
+        <a class="icon" style="font-size: 30px" onclick="OpenMobileNav()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <div class="dropdown-content" id="dropdownid">
+          <a href="/index.html">Hem</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a class="active"href="kontakt.html">Kontakt</a>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="kontaktform">
+        <form method="post" action="/php/kontakt.php" name="contact_form">
+          <label for="fname">Förnamn</label>
+          <input type="text" id="fname" name="firstname" placeholder="ditt förnamn.">
+          <label for="fname">Efternamn</label>
+          <input type="text" id="lname" name="lastname" placeholder="ditt efternamn.">
+          <label for="email">Email</label>
+          <input type="text" id="mail" name="email" placeholder="E-mail">
+          <label for="subject">Medelande</label>
+          <textarea id="subject" name="subject" placeholder="Ditt medelande" style="height:200px"></textarea>
+          <input type="submit" value="Submit">
+
+
+        </form>
+      </div>
+    </div>
+      
+    </div>
+    <script src="/Js/kontakt.js"></script>
+  </body>
+</html>
