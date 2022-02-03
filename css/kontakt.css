@@ -1,0 +1,15 @@
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: solid 1px #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.kontaktform{
+    padding: 16px;
+    width: 500px;
+}
